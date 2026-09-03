@@ -81,7 +81,11 @@ Pick the one which best serves your needs:
     <h3>Restarting Google Cloud Shell</h3>
     If your environment times out and you cannot reconnect in the browser tab, or if you shut down the browser and want to get back to your work,
     use <a href="https://ide.cloud.google.com">https://ide.cloud.google.com</a> to launch the environment with the IDE.
-    Then in the IDE use the menu <code>File &rarr; Open Recent</code> and pick the recent workspace you want to open.
-    Or, use <code>File &rarr; Open Folder...</code> and browse to the workspace folder under <i>/cloudshell.open</i>.
+    This should reopen the workspace that was last open.
+    If it does not, or you want to change to a different workspace,
+    in the IDE use the menu <code>File &rarr; Open Recent</code> and pick the recent workspace you want to open.
+    Or, use <code>File &rarr; Open Folder...</code> and browse to the workspace folder under <i>$HOME/cloudshell.open</i>.
+    By the way, if you delete a workspace folder from $HOME/cloudshell_open and then relaunch cloud shell, you will get a "Workspace not found" error.
+    Delete workspaces when you are finished to conserve storage space.
     </blockquote>
 
