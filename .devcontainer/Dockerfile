@@ -10,6 +10,7 @@ WORKDIR /workspace
 # Install system dependencies required for building and unpacking Ada tooling
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    gdb \
     curl \
     jq \
     unzip \
