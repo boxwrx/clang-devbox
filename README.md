@@ -77,5 +77,5 @@ Pick the one which best serves your needs:
         Continue with the instructions provided there.</li>
     </ol>
     The workspace will persist in your Google Cloud Shell until it is deleted.<br><br>
-    <a target="_blank" href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/ntiertraining/introduction-to-ada.git&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md&ephemeral=true">Click this link to launch this repository in Google Cloud Shell in a new browser tab</a>.<br><br>
-    </blockquote><br>
+    <a target="_blank" href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/ntiertraining/introduction-to-ada.git&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md&ephemeral=true">Click this link to launch this repository in Google Cloud Shell in a new browser tab</a>.<br>
+    </blockquote>
