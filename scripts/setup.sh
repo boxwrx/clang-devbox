@@ -58,4 +58,35 @@ if ! sed -i \
     exit 1
 fi
 
+# Patch the system-wide settings.json to not reopen the previous workspace
+
+echo "Patching settings.json file..." | tee -a ${pwd}/scripts/setup.log
+CODEOSS_SETTINGS_DIR="$HOME/.codeoss/data/Machine"
+CODEOSS_SETTINGS_FILE="$CODEOSS_SETTINGS_DIR/settings.json"
+
+mkdir -p "$CODEOSS_SETTINGS_DIR" >> ${pwd}/scripts/setup.log 2>&1
+
+if [ ! -f "$CODEOSS_SETTINGS_FILE" ]; then
+  # File doesn't exist yet — create it fresh
+  cat > "$CODEOSS_SETTINGS_FILE" << 'EOF'
+{
+  "window.restoreWindows": "none"
+}
+EOF
+elif ! grep -q '"window.restoreWindows"' "$CODEOSS_SETTINGS_FILE"; then
+  if grep -qE '^\s*\{\s*\}\s*$' "$CODEOSS_SETTINGS_FILE"; then
+    # File is just an empty object
+    if ! sed -i 's/{[[:space:]]*}/{\n  "window.restoreWindows": "none"\n}/' "$CODEOSS_SETTINGS_FILE" >> ${pwd}/scripts/setup.log 2>&1; then
+      echo "Failed to patch settings.json file." | tee -a ${pwd}/scripts/setup.log
+      exit 1
+    fi
+  else
+    # File has existing keys — insert before the final closing brace
+    if ! sed -i '$ s/^}$/,\n  "window.restoreWindows": "none"\n}/' "$CODEOSS_SETTINGS_FILE" >> ${pwd}/scripts/setup.log 2>&1; then
+      echo "Failed to patch settings.json file." | tee -a ${pwd}/scripts/setup.log
+      exit 1
+    fi
+  fi
+fi
+
 echo "Setup completed successfully." | tee -a ${pwd}/scripts/setup.log
