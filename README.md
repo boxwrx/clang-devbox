@@ -77,5 +77,5 @@ Pick the one which best serves your needs:
         Continue with the instructions provided there.</li>
     </ol>
     The workspace will persist in your Google Cloud Shell until it is deleted.<br><br>
-    <a target="_blank" href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/boxwrx/clang-devbox&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md">Click this link to launch this repository in Google Cloud Shell in the browser</a>.<br>
+    <a target="_blank" href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/boxwrx/clang-devbox&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md">Click this link to launch this repository in Google Cloud Shell in the browser</a> (right-click if you want to open it in a new tab).<br>
     </blockquote>
