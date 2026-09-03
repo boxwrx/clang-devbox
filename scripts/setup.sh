@@ -17,11 +17,28 @@ if ! sudo apt-get install -y --no-install-recommends clang lldb >> ${pwd}/script
     exit 1
 fi
 
-# Add VS Code extensions (if they are not alreay there)
+# Add VS Code extensions (if they are not alreay there). This is installing from a persistent workspace, so
+# the extensions are installed for the cloud shell and will persist across sessions.
 
 echo "Installing Visual Studio Code extensions..." | tee -a ${pwd}/scripts/setup.log
 if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpptools >> ${pwd}/scripts/setup.log 2>&1; then
     echo "Failed to install Visual Studio Code extension for CPP Tools." | tee -a ${pwd}/scripts/setup.log
+    exit 1
+fi
+if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpp-devtools >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to install Visual Studio Code extension for CPP DevTools." | tee -a ${pwd}/scripts/setup.log
+    exit 1
+fi
+if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpptools-extension-pack >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to install Visual Studio Code extension for CPP Tools Extension Pack." | tee -a ${pwd}/scripts/setup.log
+    exit 1
+fi
+if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpptools-themes >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to install Visual Studio Code extension for CPP Tools Themes." | tee -a ${pwd}/scripts/setup.log
+    exit 1
+fi
+if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension vadimcn.vscode-lldb >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to install Visual Studio Code extension for LLDB." | tee -a ${pwd}/scripts/setup.log
     exit 1
 fi
 

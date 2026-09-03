@@ -5,7 +5,7 @@
     },
     "customizations": {
         "vscode": {
-            "extensions": ["AdaCore.ada", "adaCore.language-server"]
+            "extensions": [  "ms-vscode.cpptools", "ms-vscode.cpp-devtools", "ms-vscode.cpptools-extension-pack", "ms-vscode.cpptools-themes", "vadimcn.vscode-lldb" ]
         }
     }
 }
