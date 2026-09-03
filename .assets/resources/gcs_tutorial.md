@@ -2,7 +2,7 @@
 [//]: # (Copyright © 2026 nTier Training. All rights reserved.)
 [//]: #
 
-![Banner Light](../images/banner-clang-vde-small-light.png)
+![Banner Light](https://raw.githubusercontent.com/boxwrx/clang-devbox/main/.assets/images/banner-clang-vde-small-light.png)
 
 # Setup Instructions
 
