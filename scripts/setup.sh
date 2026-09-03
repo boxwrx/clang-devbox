@@ -7,6 +7,7 @@
 # Create dependencies and prepare for the download
 
 pwd=$(pwd)
+
 echo "Initializing setup..." | tee ${pwd}/scripts/setup.log
 mkdir -p ~/Downloads ~/.cloudshell
 touch ~/.cloudshell/no-apt-get-warning  # Suppress the CS ephemeral environment warning

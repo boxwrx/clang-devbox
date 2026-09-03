@@ -47,7 +47,7 @@ Pick the one which best serves your needs:
         <li>or use the menu item <code>View &rarr; Command Palette...</code> and select the <code>Dev Containers: Reopen in Container</code>
             command to manually launch the project in a local Docker container.</li>
     </ol>
-    Work performed in the container will persist until the container is deleted.
+    <br>Work performed in the container will persist until the container is deleted.
     </blockquote><br>
 
 ## <sup>&#9313;</sup> Run in a virtual GitHub Codespace:
@@ -61,7 +61,7 @@ Pick the one which best serves your needs:
         <li>Select the <i>Codespaces</i> tab.</i>
         <li>Click the button to <i>Create codespace on main</i>.</li>
     </ol>
-   Work performed in the Codespace will persist until Codespace is deleted.
+   <br>Work performed in the Codespace will persist until Codespace is deleted.
     </blockquote><br>
 
 ## <sup>&#9314;</sup> Run in a virtual Google Cloud Shell:
@@ -77,5 +77,5 @@ Pick the one which best serves your needs:
         Continue with the instructions provided there.</li>
     </ol>
     The workspace will persist in your Google Cloud Shell until it is deleted.<br><br>
-    <a target="_blank" href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/ntiertraining/introduction-to-ada.git&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md&ephemeral=true">Click this link to launch this repository in Google Cloud Shell in a new browser tab</a>.<br>
+    <a target="_blank" href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/boxwrx/clang-devbox&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md">Click this link to launch this repository in Google Cloud Shell in the browser</a>.<br>
     </blockquote>
