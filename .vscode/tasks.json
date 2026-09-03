@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build project via Makefile"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "Remove build artifacts"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "make",
+            "args": ["run"],
+            "group": "build",
+            "dependsOn": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Build and run the executable"
+        }
+    ]
+}

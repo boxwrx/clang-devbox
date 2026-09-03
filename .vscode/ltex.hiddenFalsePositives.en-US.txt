@@ -1,0 +1,3 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOnce the environment is established, both the gcc and clang build environments are available, as well as the gdb and lldb debuggers.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOnce the environment is established, both the gcc and clang build environments are available, as well as the gdb and lldb debuggers.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOnce the environment is established, both the gcc and clang build environments are available, as well as the gdb and lldb debuggers.\\E$"}

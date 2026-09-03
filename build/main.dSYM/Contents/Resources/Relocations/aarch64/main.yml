@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/joelmussman/Projects/clang-dev-env/build/main'
+relocations:     []
+...
