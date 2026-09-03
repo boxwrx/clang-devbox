@@ -47,7 +47,13 @@ Pick the one which best serves your needs:
         <li>or use the menu item <code>View &rarr; Command Palette...</code> and select the <code>Dev Containers: Reopen in Container</code>
             command to manually launch the project in a local Docker container.</li>
     </ol>
-    <br>Work performed in the container will persist until the container is deleted.
+    <br>Work performed in the container will persist until the container is deleted.<br><br>
+    There are several documentation paths to understanding this setup; Docker, Docker Desktop, and integrating a dev container with VS Code:<br>
+    <ol type="a">
+        <li>Docker Documentation (start with "Docker Basics"): <a href="https://docs.docker.com">https://docs.docker.com</a></li>
+        <li>Docker Desktop: <a href="https://docs.docker.com/desktop/">https://docs.docker.com/desktop/</a>
+        <li>VS Code and dev containers: <a href="https://code.visualstudio.com/docs/devcontainers/containers">https://code.visualstudio.com/docs/devcontainers/containers</a>
+    </ol>
     </blockquote><br>
 
 ## <sup>&#9313;</sup> Run in a virtual GitHub Codespace:
@@ -61,7 +67,8 @@ Pick the one which best serves your needs:
         <li>Select the <i>Codespaces</i> tab.</i>
         <li>Click the button to <i>Create codespace on main</i>.</li>
     </ol>
-   <br>Work performed in the Codespace will persist until Codespace is deleted.
+    <br>Work performed in the Codespace will persist until Codespace is deleted.<br><br>
+    The documentation for GitHub Codespaces begins here: <a href="https://docs.github.com/en/codespaces">https://docs.github.com/en/codespaces</a>.
     </blockquote><br>
 
 ## <sup>&#9314;</sup> Run in a virtual Google Cloud Shell:
@@ -86,6 +93,7 @@ Pick the one which best serves your needs:
     in the IDE use the menu <code>File &rarr; Open Recent</code> and pick the recent workspace you want to open.
     Or, use <code>File &rarr; Open Folder...</code> and browse to the workspace folder under <i>$HOME/cloudshell.open</i>.
     By the way, if you delete a workspace folder from $HOME/cloudshell_open and then relaunch cloud shell, you will get a "Workspace not found" error.
-    Delete workspaces when you are finished to conserve storage space.
+    Delete workspaces when you are finished to conserve storage space.<br><br>
+    The documentation for Google Cloud Shell begins here: <a href="https://docs.cloud.google.com/shell/docs">https://docs.cloud.google.com/shell/docs</a>.
     </blockquote>
 
