@@ -77,5 +77,11 @@ Pick the one which best serves your needs:
         Continue with the instructions provided there.</li>
     </ol>
     The workspace will persist in your Google Cloud Shell until it is deleted.<br><br>
-    <a target="_blank" href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/boxwrx/clang-devbox&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md">Click this link to launch this repository in Google Cloud Shell in the browser</a> (right-click if you want to open it in a new tab).<br>
+    <a href="https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/boxwrx/clang-devbox&cloudshell_workspace=.&&cloudshell_tutorial=.assets/resources/gcs_tutorial.md">Click this link to launch this repository in Google Cloud Shell in the browser</a> (right-click if you want to open it in a new tab).<br>
+    <h3>Restarting Google Cloud Shell</h3>
+    If your environment times out and you cannot reconnect in the browser tab, or if you shut down the browser and want to get back to your work,
+    use <a href="https://ide.cloud.google.com">https://ide.cloud.google.com</a> to launch the environment with the IDE.
+    Then in the IDE use the menu <code>File &rarr; Open Recent</code> and pick the recent workspace you want to open.
+    Or, use <code>File &rarr; Open Folder...</code> and browse to the workspace folder under <i>/cloudshell.open</i>.
     </blockquote>
+
