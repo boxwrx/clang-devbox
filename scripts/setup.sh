@@ -22,24 +22,39 @@ fi
 # the extensions are installed for the cloud shell and will persist across sessions.
 
 echo "Installing Visual Studio Code extensions..." | tee -a ${pwd}/scripts/setup.log
-if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpptools >> ${pwd}/scripts/setup.log 2>&1; then
-    echo "Failed to install Visual Studio Code extension for CPP Tools." | tee -a ${pwd}/scripts/setup.log
+if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension llvm-vs-code-extensions.vscode-clangd >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to install Visual Studio Code extension for LLVM Clang Tools." | tee -a ${pwd}/scripts/setup.log
     exit 1
 fi
-if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpp-devtools >> ${pwd}/scripts/setup.log 2>&1; then
-    echo "Failed to install Visual Studio Code extension for CPP DevTools." | tee -a ${pwd}/scripts/setup.log
+if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension twxs.cmake >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to install Visual Studio Code extension for CMake Tools." | tee -a ${pwd}/scripts/setup.log
     exit 1
 fi
-if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpptools-extension-pack >> ${pwd}/scripts/setup.log 2>&1; then
-    echo "Failed to install Visual Studio Code extension for CPP Tools Extension Pack." | tee -a ${pwd}/scripts/setup.log
-    exit 1
-fi
-if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension ms-vscode.cpptools-themes >> ${pwd}/scripts/setup.log 2>&1; then
-    echo "Failed to install Visual Studio Code extension for CPP Tools Themes." | tee -a ${pwd}/scripts/setup.log
+if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension webfreak.debug >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to install Visual Studio Code extension for CMake Tools." | tee -a ${pwd}/scripts/setup.log
     exit 1
 fi
 if ! /google/devshell/editor/code-oss-for-cloud-shell/bin/remote-cli/codeoss --install-extension vadimcn.vscode-lldb >> ${pwd}/scripts/setup.log 2>&1; then
     echo "Failed to install Visual Studio Code extension for LLDB." | tee -a ${pwd}/scripts/setup.log
+    exit 1
+fi
+
+# Patch the launch.json file to match the Thela/webfreak.debug settings instead of the Microsoft options for VS Code.
+
+echo "Patching launch.json file..." | tee -a ${pwd}/scripts/setup.log
+if ! sed -i \
+  -e 's/"type": "cppdbg"/"type": "gdb"/' \
+  -e 's/"program":/"target":/' \
+  -e '/"stopAtEntry": false,/d' \
+  -e '/"environment": \[\],/d' \
+  -e '/"externalConsole": false,/d' \
+  -e '/"MIMode": "gdb",/d' \
+  -e '/"miDebuggerPath": "gdb",/d' \
+  -e '/"internalConsoleOptions": "openOnSessionStart"/d' \
+  -e 's/"args": \[\]/"arguments": ""/' \
+  -e '/"setupCommands": \[/,/\],/d' \
+  .vscode/launch.json >> ${pwd}/scripts/setup.log 2>&1; then
+    echo "Failed to patch launch.json file." | tee -a ${pwd}/scripts/setup.log
     exit 1
 fi
 

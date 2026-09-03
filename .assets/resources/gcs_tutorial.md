@@ -2,8 +2,8 @@
 [//]: # (Copyright © 2026 nTier Training. All rights reserved.)
 [//]: #
 
-![Banner Light](/.assets/images/banner-dev-env-small-light.png#gh-light-mode-only)
-![banner Dark](/.assets/images/banner-dev-env-small-dark.png#gh-dark-mode-only)
+![Banner Light](./.assets/images/banner-clang-vde-small-light.png#gh-light-mode-only)
+![banner Dark](./.assets/images/banner-clang-vde-small-dark.png#gh-dark-mode-only)
 
 # Introduction
 
@@ -24,8 +24,10 @@ Follow these steps to take care of it:
     This opens the <i>Panel</i> at the bottom of the screen and leaves the <i>Terminal</i> tab with the focus.
 1. In the new terminal window run the command <code>scripts/gcs_setup.sh</code> and wait for it to complete.
     If the script fails to complete, look at the file ~/setup.log for the details on what happened.
-1. Run the command <code>gcc --version</code> to make sure the Gnu debugger installed successfully.
-1. Run the command <code>clang toolchain --select</code>.
+1. Run the command <code>gcc --version</code> to make sure the Gnu compiler installed successfully.
+1. Run the command <code>gdb --version</code> to make sure the Gnu debugger installed successfully.
+1. Run the command <code>clang --version</code> to make sure the Clang compiler installed successfully.
+1. Run the command <code>lldb --version</code> to make sure the LLVM debugger installed successfully.
 1. The vertical bar at the left of the IDE is the <i>Activity Bar</i>.
     Clicking on the icons reveals (or hides) a <i>Sidebar Panel</i> to the right of the <i>Activity Bar</i> (left side of the IDE).
     Find and click on the <i>Extensions</i> icon (four squares, the top right square is twisted) and open the panel.
