@@ -97,3 +97,10 @@ Pick the one which best serves your needs:
     The documentation for Google Cloud Shell begins here: <a href="https://docs.cloud.google.com/shell/docs">https://docs.cloud.google.com/shell/docs</a>.
     </blockquote>
 
+
+## License
+
+The code is licensed under the MIT license. You may use and modify all or part of it as you choose, as long as attribution to the source is provided per the license. See the details in the [license file](./LICENSE.md) or at the [Open Source Initiative](https://opensource.org/licenses/MIT).
+
+---
+Copyright &copy; 2026 Smallrock Internet Services, Inc. All rights reserved.

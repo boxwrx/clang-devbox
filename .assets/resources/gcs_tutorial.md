@@ -35,3 +35,6 @@ Follow these steps to take care of it:
     in the vertical IDE <i>Activity Bar</i> at the left click on the <i>pages</i> icon at the top to
     open the view in the <i>Side bar</i> to the right of the <i>Activity Bar</i>*.
 1. Close this window when these tasks are complete.
+
+---
+Copyright &copy; Smallrock Internet Services, Inc. All rights reserved.

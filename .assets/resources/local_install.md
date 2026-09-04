@@ -106,3 +106,6 @@ This assumes that Homebrew is installed as the package manager on macOS.
     docker --version
     docker run hello-world
     ```
+
+---
+Copyright &copy; Smallrock Internet Services, Inc. All rights reserved.

@@ -1,3 +1,7 @@
+# Dockerfile
+# Copyright © 2026 Smallrock Internet Services, Inc. All rights reserved.
+#
+
 # The devcontainer.json file defines a build so the Dockerfile is used to build a new image.
 # The base image is from Microsoft at https://mcr.microsoft.com/en-us/artifact/mar/devcontainers/javascript-node/tags.
 # The name "bookworm" refers to the Debian Bookworm release, which is the base OS for this image, adding the name

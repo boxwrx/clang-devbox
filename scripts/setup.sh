@@ -1,4 +1,6 @@
 # Google Cloud Shell Software Installation
+# Copyright © 2026 Smallrock Internet Services, Inc. All rights reserved.
+#
 #   - CS always provides x86_64 Debian Linux environment
 #   - Software installation is not preserved, only the file system. This script must be run on every boot.
 #   - CS has no mechanism to launch a script automatically, manual interventions is required.
