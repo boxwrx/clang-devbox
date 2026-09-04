@@ -5,7 +5,7 @@
 ![Banner Light](./.assets/images/banner-clang-vde-light.png#gh-light-mode-only)
 ![banner Dark](./.assets/images/banner-clang-vde-dark.png#gh-dark-mode-only)
 <div align="right">
-    A Box Works Coding Environment<img alt="Box Logo" src="./.assets/images/box-small.png" />
+    A <a href="https://github.com/boxwrx">Box Works</a> Coding Environment<img alt="Box Logo" src="./.assets/images/box-small.png" />
 </div>
 
 # Introduction
@@ -51,8 +51,8 @@ Pick the one which best serves your needs:
     There are several documentation paths to understanding this setup; Docker, Docker Desktop, and integrating a dev container with VS Code:<br>
     <ol type="a">
         <li>Docker Documentation (start with "Docker Basics"): <a href="https://docs.docker.com">https://docs.docker.com</a></li>
-        <li>Docker Desktop: <a href="https://docs.docker.com/desktop/">https://docs.docker.com/desktop/</a>
-        <li>VS Code and dev containers: <a href="https://code.visualstudio.com/docs/devcontainers/containers">https://code.visualstudio.com/docs/devcontainers/containers</a>
+        <li>Docker Desktop: <a href="https://docs.docker.com/desktop/">https://docs.docker.com/desktop/</a></li>
+        <li>VS Code and dev containers: <a href="https://code.visualstudio.com/docs/devcontainers/containers">https://code.visualstudio.com/docs/devcontainers/containers</a></li>
     </ol>
     </blockquote><br>
 

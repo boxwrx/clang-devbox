@@ -7,7 +7,7 @@
 
 # Local Application Installation
 
-This page covers installing Visual Studio Code, gcc, and/or clang on the different platforms.
+This page covers installing Visual Studio Code and Docker on [Microsoft Windows](#microsoft-windows), [Apple macOS](#apple-macos), and [Linux](#linux).
 
 ## Microsoft Windows
 
