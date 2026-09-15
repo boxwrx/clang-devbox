@@ -11,7 +11,8 @@
 # Introduction
 
 This is a general C/C++ development environment designed to be cloud-hosted or started in a local docker container.
-It is purely an empty sandbox for playing with C and C++ in Linux.
+It is purely an empty sandbox for playing with C and C++ in Linux, using
+either the *gcc* or *clang* compilers.
 
 Once the environment is established, both the *gcc* and *clang* build environments are available, as well as the
 *gdb* and *lldb* debuggers.
